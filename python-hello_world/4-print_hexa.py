@@ -1,5 +1,5 @@
   # take input from user
-n = 97
+n = 98
  
 # loop through the numbers from 1 to N
 for i in range(0, n+1):
