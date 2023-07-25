@@ -5,9 +5,9 @@ number = random.randint(-10, 10)
 a = 98
 
 if a > 0:
-  print(a ("is positive"))
+  print("98 is positive")
 elif a == 0:
-  print(a ("is zero"))
+  print("0 is zero")
 else: 
-  print(a ("is negative"))
+  print("-98 is negative")
 
