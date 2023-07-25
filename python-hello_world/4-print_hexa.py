@@ -1,6 +1,5 @@
-n = 98
+#!/usr/bin/python3
+n = 99
 for i in range(0, n+1):
 
-    hex_value = "{0:x}".format(i)
-
-    print(hex_value)
+    print("{} = {}" .format(i,hex(i)))
