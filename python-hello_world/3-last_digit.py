@@ -7,7 +7,7 @@ Last_digit = abs(number) % 10
 
 
 if number > 0:
-    print ("Last digit of {}" " is {}". format(number,Last_digit),end="")
+    print ("Last_digit of {}" " is {}". format(number,Last_digit),end="")
     
     if Last_digit > 5:
         print(" and is greater than 5 ")
@@ -17,7 +17,7 @@ if number > 0:
         print(" and is less than 6 and not 0 ")
 
 else:
-    print ("Last digit of {}" " is {}". format(number,-Last_digit),end="")
+    print ("Last_digit of {}" " is {}". format(number,-Last_digit),end="")
 
 if number < 0:
 
