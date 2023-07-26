@@ -9,3 +9,4 @@ def is_prime(number):
 
     else:
         return True
+    
