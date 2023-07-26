@@ -1,18 +1,28 @@
-def validate_password(password):
+#!/usr/bin/env python3
 
-    # Check the length of the password
+def validate_password(password):
+    # Check length (at least 8 characters)
     if len(password) < 8:
-      return False
-    
-    # Check for the presence of uppercase, lowercase letters, and digits
-    has_lowercase = any (char.islower() for char in password)
-    has_uppercase = any (char.isupper() for char in password)
-    has_digit = any (char.isdigit() for char in password)
-   
-    # Check for the presence of spaces
+        return False
+
+    # Check if there is at least one uppercase letter, one lowercase letter, and one digit
+    has_upper = False
+    has_lower = False
+    has_digit = False
+
+    for char in password:
+        if char.isupper():
+            has_upper = True
+        elif char.islower():
+            has_lower = True
+        elif char.isdigit():
+            has_digit = True
+
+    if not (has_upper and has_lower and has_digit):
+        return False
+
+    # Check if the password contains spaces
     if ' ' in password:
-      return False
-    
-    # Return True if all conditions are met
-    if has_uppercase and has_lowercase and has_digit:
-      return True
+        return False
+
+    return True
