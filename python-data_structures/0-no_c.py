@@ -1,2 +1,3 @@
 def no_c(my_string):
-    str.replace(c)
+    print (str.replace("c", ""))
+    
