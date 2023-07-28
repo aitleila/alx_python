@@ -10,7 +10,7 @@ if __name__ == "__main__":
        print ("0 arguments.")
 
     else:
-        print (f"{num_args}argument{'s' if num_args > 1 else ''}:")
+        print (f"{num_args} argument {'s' if num_args > 1 else ''}:")
         for i, arg in enumerate(args, 1):
             print(f"{i}: {arg}")
 
