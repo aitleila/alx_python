@@ -13,7 +13,6 @@ def square_matrix_simple(matrix=[]):
         for num in row:
             new_row.append(num**2)
             square_matrix.append(num**2)
-            square_matrix = square_matrix_simple(matrix)
 
-    return square_matrix
+    return square_matrix(matrix)
 
