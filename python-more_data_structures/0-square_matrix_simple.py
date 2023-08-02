@@ -2,5 +2,5 @@
 
 def square_matrix_simple(matrix=[]):
     for i in matrix:
-        new_matrix = (pow(i*2), matrix)
+        new_matrix = (matrix*matrix)
     return new_matrix
