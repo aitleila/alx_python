@@ -8,6 +8,6 @@ def best_score(a_dictionary):
           return best_score
         
         elif key in a_dictionary:
-           best_score=max(a_dictionary, key= 0) 
+           best_score=0
            return None
                            
