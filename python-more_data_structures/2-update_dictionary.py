@@ -4,9 +4,9 @@ def update_dictionary(a_dictionary, key, value):
 
    for key in a_dictionary:
       if key in a_dictionary:
-         a_dictionary.update({"language": "Python"})    
+         a_dictionary["key"]= value    
       elif key not in a_dictionary:
-         a_dictionary.update({'city' : "San Francisco"})    
+         a_dictionary ["key"]= value    
          
 
 
