@@ -2,13 +2,11 @@
 
 def update_dictionary(a_dictionary, key, value):
 
-    a_dictionary[key] = value
-    return a_dictionary
-
-a_dictionary= { 'language': "C", 'number': 89, 'track': "Low level" }
-
-new_dict = update_dictionary(a_dictionary, 'language', "Python")
-
-new_dict = update_dictionary(a_dictionary, 'city', "San Francisco")
+   for key in a_dictionary:
+      if key in a_dictionary:
+         update_dictionary['value']
+      elif key not in a_dictionary:
+         update_dictionary['key']='value'
+         
 
 
