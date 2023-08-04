@@ -10,7 +10,7 @@ class Square:
     """
     
     def __init__(self, size=0):
-        self.__size == size
+        self.__size = size
 
     def area (self):
         self.__size**2
@@ -20,7 +20,7 @@ class Square:
 
     def set_size (self, new_size):
         self._size = new_size
-        if new_size <=0 :
+        if new_size < 0 :
             ValueError ("The size is negative, please enter a new size.")
         
     def get_size (self):
