@@ -10,21 +10,21 @@ class Square:
     """
     
     def __init__(self, size=0):
-        return self.__size == size
+        self.__size == size
 
     def area (self):
-        return self.__size**2
+        self.__size**2
 
     def perimeter (self):
-       return  4*self.__size
+       4*self.__size
 
     def set_size (self, new_size):
         self._size = new_size
         if new_size <=0 :
-            raise ValueError ("The size is negative, please enter a new size.")
+            ValueError ("The size is negative, please enter a new size.")
         
     def get_size (self):
-        return self.__size
+        self.__size
 
 
     
