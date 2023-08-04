@@ -1,11 +1,11 @@
 #!/usr/bin/python3
+"""
+        __size (int): The size of the square (private attribute)
+"""
 
 class Square:
-    
-    '''
-    __size(init) : private attribute
 
-    '''
+    
     def __init__(self, size=0):
         self.__size = size
 
