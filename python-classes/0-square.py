@@ -4,6 +4,8 @@ class Square:
     name = "my_square"
     size = "square"
     value = 3
+    def __init__(self, square):
+        pass
 #Instantiation:
    
 
