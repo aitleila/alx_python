@@ -16,10 +16,10 @@ class Square:
         if size is less than 0, raise a ValueError
         """
         if not isinstance (self, int):
-            TypeError("size must be an integer")
+            return TypeError("size must be an integer")
 
         if size < 0 :
-            ValueError("size must be >= 0")
+            return ValueError("size must be >= 0")
 
         self.__size = size
 
