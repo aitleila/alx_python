@@ -17,13 +17,10 @@ class Square:
         """
         
         self.__size = size
-
         if not isinstance (self, int):
-            raise TypeError("size must be an integer")
-
+            TypeError("size must be an integer")
         if size < 0 :
-            raise ValueError("size must be >= 0")
-
+            ValueError("size must be >= 0")
 
     def area (self):
         self.__size**2
@@ -34,7 +31,7 @@ class Square:
     def set_size (self, new_size):
         self._size = new_size
         if new_size < 0 :
-            raise ValueError ("The size is negative, please enter a new size.")
+            ValueError ("The size is negative, please enter a new size.")
         
     def get_size (self):
         self.__size
