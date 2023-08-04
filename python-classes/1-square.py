@@ -34,7 +34,7 @@ class Square:
     def set_size (self, new_size):
         self._size = new_size
         if new_size < 0 :
-            ValueError ("The size is negative, please enter a new size.")
+            raise ValueError ("The size is negative, please enter a new size.")
         
     def get_size (self):
         self.__size
