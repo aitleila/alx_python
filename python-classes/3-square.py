@@ -26,7 +26,9 @@ class Square:
 
     def size(self):
         """
-        @property : The Getter
+        @property decorater:
+        Allows one to create getters and setters method for a private attribute.
+        Enables controlled access to that attribute while maintaining encapsulation.
         """
         self.__size
 
@@ -34,7 +36,7 @@ class Square:
 
     def size(self, value):
         """
-        @property.setter : The Setter
+        @property.setter : Decorator used in conjunction with @property to define the setter method for a property
         """
         self.__size = value
         if not isinstance (self, int):
