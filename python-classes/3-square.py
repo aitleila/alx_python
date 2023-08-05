@@ -13,7 +13,7 @@ class Square:
         """
         Initialize a Square object with a optional size
         """
-        return self.__size = size
+        return self.__size == size
 
     @property
 
@@ -39,7 +39,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         
-        return self.__size = value
+        return self.__size == value
 
     def area (self):
         """
