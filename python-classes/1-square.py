@@ -30,9 +30,11 @@ class Square:
        4*self.__size
 
     def set_size (self, new_size):
-        self._size == new_size
-        if new_size < 0 :
-            raise ValueError ("The size is negative, please enter a new size.")
+        self.__size = new_size
+        if type is not int(self, int):
+            raise TypeError("size must be an integer")
+        elif new_size < 0:
+            raise ValueError("size must be >= 0")
         
     def get_size (self):
         self.__size
