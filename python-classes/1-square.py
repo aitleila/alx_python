@@ -7,13 +7,18 @@ class Square:
 
     """ This class represent square of sizes """
     
-    def __init__(self, size=0,):
-
-        """size must be an integer, otherwise raise a TypeError"""
-
-        if not isinstance(self, int):
-            raise TypeError("size must be an integer")
-        if size < 0 :
-            raise ValueError("size must be >= 0")
+    def __init__(self, size=0):
+        """
+        Initialize a Square object with a optional size
         
+        Args:
+            size(int): The size of the Square(default is 0)
+        Raises:
+            TypeError:If size is not an interger
+            ValueError:If size is less than 0
+        """
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        if size < 0:
+            raise ValueError("size must be >= 0")      
         self.__size = size

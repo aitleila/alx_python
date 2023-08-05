@@ -11,22 +11,19 @@ class Square:
     
     def __init__(self, size=0):
         """
-        Square object with a optional size
-
+        Initialize a Square object with a optional size
+        
         Args:
             size(int): The size of the Square(default is 0)
-
-        Returns:
+        Raises:
             TypeError:If size is not an interger
             ValueError:If size is less than 0
         """
-        
-        if not isinstance (size, int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        
-        return self.__size == size
+        if size < 0:
+            raise ValueError("size must be >= 0")      
+        self.__size = size
 
     @property
 
@@ -49,7 +46,7 @@ class Square:
         """
         if not isinstance (self, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
         
         self.__size == value
@@ -61,15 +58,4 @@ class Square:
             int: The area of the square.
         """
         return self.__size**2
-        return area(self.__size**2)
     
-    def perimeter (self):
-       4*self.__size
-
-    def set_size (self, new_size):
-        self._size = new_size
-        if new_size < 0 :
-            ValueError ("The size is negative, please enter a new size.")
-        
-    def get_size (self):
-        self.__size
