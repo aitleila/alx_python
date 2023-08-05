@@ -62,3 +62,14 @@ class Square:
         """
         return self.__size**2
         return area(self.__size**2)
+    
+    def perimeter (self):
+       4*self.__size
+
+    def set_size (self, new_size):
+        self._size = new_size
+        if new_size < 0 :
+            ValueError ("The size is negative, please enter a new size.")
+        
+    def get_size (self):
+        self.__size
