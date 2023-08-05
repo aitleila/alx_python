@@ -11,9 +11,14 @@ class Square:
     
     def __init__(self, size=0):
         """
-        size must be an integer, otherwise raise a TypeError
+        Square object with a optional size
 
-        if size is less than 0, raise a ValueError
+        Args:
+            size(int): The size of the Square(default is 0)
+
+        Returns:
+            TypeError:If size is not an interger
+            ValueError:If size is less than 0
         """
         
         if not isinstance (self, int):
@@ -36,7 +41,10 @@ class Square:
 
     def size(self, value):
         """
-        @size.setter : Decorator used in conjunction with @property to define the setter method for a property
+         @size.setter : Decorator used in conjunction with @property to define the setter method for a property
+        Returns:
+            TypeError:If size is not an interger
+            ValueError:If size is less than 0
         """
         if not isinstance (self, int):
             raise TypeError("size must be an integer")
@@ -47,7 +55,7 @@ class Square:
 
     def area (self):
         """
-            current square area
+        Current square area
         """
         return self.__size**2
         return area(self.__size**2)
