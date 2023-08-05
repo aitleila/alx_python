@@ -12,15 +12,8 @@ class Square:
     def __init__(self, size=0):
         """
         Initialize a Square object with a optional size
-        
-        Args:
-            size(int): The size of the Square(default is 0)
-        Raises:
-            TypeError:If size is not an interger
-            ValueError:If size is less than 0
         """
-             
-        self.__size = size
+        return self.__size = size
 
     @property
 
@@ -30,7 +23,7 @@ class Square:
         Allows one to create getters and setters method for a private attribute.
         Enables controlled access to that attribute while maintaining encapsulation.
         """
-        self.__size
+        return self.__size
 
     @size.setter
 
@@ -46,7 +39,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         
-        self.__size = value
+        return self.__size = value
 
     def area (self):
         """
