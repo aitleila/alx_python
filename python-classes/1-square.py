@@ -18,7 +18,7 @@ class Square:
         """
         if not isinstance(self, int):
             raise TypeError("size must be an integer")
-        elif self.__size < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
         
         self.__size == size
@@ -30,11 +30,12 @@ class Square:
        4*self.__size
 
     def set_size (self, new_size):
-        self.__size = new_size
         if not isinstance(self, int):
             raise TypeError("size must be an integer")
-        elif self.__size < 0:
+        elif new_size < 0:
             raise ValueError("size must be >= 0")
         
+        self.__size = new_size
+
     def get_size (self):
         self.__size
