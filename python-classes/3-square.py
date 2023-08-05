@@ -48,11 +48,11 @@ class Square:
             ValueError:If size is less than 0
         """
         if not isinstance (self, int):
-            TypeError("size must be an integer")
+            return TypeError("size must be an integer")
         if value < 0:
-            ValueError("size must be >= 0")
+            return ValueError("size must be >= 0")
         
-        self.__size == value
+        return self.__size == value
 
     def area (self):
         """
