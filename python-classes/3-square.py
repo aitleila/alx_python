@@ -9,7 +9,7 @@ class Square:
     This class represents a square with a given size.
     """
     
-    def __init__(self, size=0):
+    def __init__(self, size):
         """
         Square object with a optional size
 
