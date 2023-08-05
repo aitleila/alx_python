@@ -16,7 +16,7 @@ class Square:
 
         if size is less than 0, raise a ValueError
         """
-        if type is not int(self, int):
+        if not isinstance(self, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
@@ -31,7 +31,7 @@ class Square:
 
     def set_size (self, new_size):
         self.__size = new_size
-        if type is not int(self, int):
+        if not isinstance(self, int):
             raise TypeError("size must be an integer")
         elif new_size < 0:
             raise ValueError("size must be >= 0")
