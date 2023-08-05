@@ -32,11 +32,11 @@ class Square:
         """
         self.__size
 
-    @property.setter
+    @size.setter
 
     def size(self, value):
         """
-        @property.setter : Decorator used in conjunction with @property to define the setter method for a property
+        @size.setter : Decorator used in conjunction with @property to define the setter method for a property
         """
         self.__size = value
         if not isinstance (self, int):
