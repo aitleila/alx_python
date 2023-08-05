@@ -8,9 +8,10 @@ class BaseGeometry:
     A base class representing geometry.
     """
     def area(self):
-        BaseGeometry.area
         if NotImplemented :
             raise " area() is not implemented "
+        return super().__area__()
+
 
 
 class BaseGeometryMetaClass(type):
