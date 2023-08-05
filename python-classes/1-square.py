@@ -20,29 +20,5 @@ class Square:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        else: 
-            self.__size == size
-
-    def area (self):
-        self.__size**2
-
-    def perimeter (self):
-       4*self.__size
-
-    def set_size (self, new_size):
-        self._size == new_size
-        if new_size < 0 :
-            raise ValueError ("The size is negative, please enter a new size.")
         
-    def get_size (self):
-        self.__size
-
-
-    
-
-
-
-#Instantiation:
-   
-
-
+        self.__size == size
