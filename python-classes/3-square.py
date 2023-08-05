@@ -13,7 +13,7 @@ class Square:
         """
         Initialize a Square object with a optional size
         """
-        return self.__size == size
+        self.__size == size
 
     @property
 
@@ -23,7 +23,7 @@ class Square:
         Allows one to create getters and setters method for a private attribute.
         Enables controlled access to that attribute while maintaining encapsulation.
         """
-        return self.__size
+        self.__size
 
     @size.setter
 
@@ -39,7 +39,7 @@ class Square:
         if value < 0:
             raise ValueError("size must be >= 0")
         
-        return self.__size == value
+        self.__size == value
 
     def area (self):
         """
