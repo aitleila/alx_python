@@ -6,7 +6,7 @@ class BaseGeometry:
     """This is empty class"""
 
 class BaseGeometryMetaClass(type):
-    """Removing __init_subclass"""
+    """__init_subclass"""
     def __dir__(cls):
         return [attribute for attribute in super.__dict__() if attribute !='__init_subclass__']
 
