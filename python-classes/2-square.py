@@ -23,7 +23,11 @@ class Square:
         self.__size = size
 
     def area (self):
-        self.__size**2
+        """
+            current square area
+        """
+        return self.__size**2
+        return area(self.__size**2)
 
     def perimeter (self):
        4*self.__size
