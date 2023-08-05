@@ -8,7 +8,7 @@ class BaseGeometry:
     This is empty class
     """
 
-class BaseGeometryMetaClass(type):
+class BaseGeometryMetaClass():
     """
     Removing __init_subclass
     """
@@ -27,4 +27,4 @@ class BaseGeometry(MetaClass=BaseGeometryMetaClass):
     """
     def __dir__(cls):
         return [attribute for attribute in super.__dict__() if attribute !='__init_subclass__']
-    pass
+
