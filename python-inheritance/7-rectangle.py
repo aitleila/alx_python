@@ -43,4 +43,4 @@ class Rectangle(BaseGeometry):
     
         Area = width * height
         print()
-        str("[Rectangle] <width>/<height>")
+        return str("[Rectangle] <width>/<height>")
