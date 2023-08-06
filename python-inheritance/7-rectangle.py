@@ -38,10 +38,7 @@ class Rectangle(BaseGeometry):
         self.__height = height
         self.integer_validator("width", width)
         self.integer_validator("height", height)
-    
-    def area(self, width, height):
-    
+        
         area = width * height
-        print("[Rectangle] <width>/<height>")
         return area
         
