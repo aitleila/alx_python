@@ -56,4 +56,7 @@ class Square(Rectangle):
     def area(self):
         area = self.__size**2
         return area
-    pass
+    
+    def __str__(self):
+        return f"[Square] {self.__size}"
+    
