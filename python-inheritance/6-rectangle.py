@@ -34,12 +34,12 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         """width and height must be positive integers, validated by integer_validator"""
-        self.__width__ = width
-        self.__height__ = height
+        self.__width = width
+        self.__height = height
         self.integer_validator("width", width)
         self.integer_validator("height", height)
-        self.__width__ = 0
-        self.__height__ = 0
+        
+        
 
 
 
