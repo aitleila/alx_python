@@ -33,10 +33,13 @@ class Rectangle(BaseGeometry):
     """ This is a class that inherits from BaseGeometry"""
 
     def __init__(self, width, height):
-        r= Rectangle(width, height)
-        if r is isinstance(r, int):
-            raise r
-        if r is not isinstance:
-            raise TypeError("{} must be an integer".format(r))
+        self.__width__ = width
+        self.__height__ = height
+
+        if isinstance(width, height, int):
+            raise Rectangle
+        if not isinstance(width, height):
+            raise TypeError("{} must be an integer".format(width, height))
+        
         
 
