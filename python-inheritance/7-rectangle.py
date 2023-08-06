@@ -42,4 +42,5 @@ class Rectangle(BaseGeometry):
     def area(self, width, height):
     
         Area = width * height
-        
+        print()
+        str("[Rectangle] <width>/<height>")
