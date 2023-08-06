@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 
 """
-    A base class representing geometry.
+    A base class representing geometry
 
     """
 
 class BaseGeometry:
 
     """
-    A base class representing geometry.
+    A base class representing geometry
     """
         
 class BaseGeometryMetaClass(type):
@@ -62,6 +62,9 @@ class Rectangle(BaseGeometry):
 
     """ 
     This is a class that inherits from BaseGeometry
+    __init__(self, width, height)
+    area (self)
+    __str__(self)
     """
 
     def __init__(self, width, height):
@@ -100,6 +103,7 @@ class Square(Rectangle):
 
     """ 
     This is a class Square that inherits from class Rectangle
+    __init__(self, size): Initialize a square with size
     """
 
     def __init__(self, size):
