@@ -33,6 +33,7 @@ class Rectangle(BaseGeometry):
     """ This is a class that inherits from BaseGeometry"""
 
     def __init__(self, width, height):
+        """width and height must be positive integers, validated by integer_validator"""
         self.__width__ = width
         self.__height__ = height
         self.integer_validator__width__ = width
