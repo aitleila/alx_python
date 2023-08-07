@@ -15,7 +15,7 @@ class Base:
         The id here is a private instance attribute
 
         """
-        if id is not None(value, int):
+        if not None(value, int):
             value = id
             raise id
         else:
