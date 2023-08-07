@@ -15,11 +15,13 @@ class Base:
         The id here is a private instance attribute
 
         """
-        if not None(value, int):
-            value = id
+        self.__id = id
+        value = self.__id
+
+        if id is not None(value, int):
             raise id
         else:
-            new_value = id
-            return new_value
+            return None
+
         
 
