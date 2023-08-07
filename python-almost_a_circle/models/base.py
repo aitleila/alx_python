@@ -10,7 +10,7 @@ class Base:
     """
     __nb_objects = 0
 
-    def __init__(self, id=None):
+    def __init__(self, id=None): 
         """
         The id here is a private instance attribute
 
@@ -21,6 +21,9 @@ class Base:
         else:
             Base.__nb_objects +=1
             id = Base.__nb_objects
+
+        self.id= Base.class_counter
+        Base.class_counter += 1
 
         
 
