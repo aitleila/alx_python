@@ -92,15 +92,15 @@ class Rectangle(Base):
         """
         
         """
-        if len(args) == 1:
+        if len(args)>0:
             return self.id == args[0]
-        if len(args) == 2:
+        if len(args)>1:
             return self.width == args[1]
-        if len(args) == 3:
+        if len(args)>2:
             return self.height == args[2]
-        if len(args) == 4:
+        if len(args)>3:
             return self.x == args[3]
-        if len(args) == 5 :
+        if len(args)>4 :
             return self.y == args[4]
         else:
             print('Please state two parameters')
