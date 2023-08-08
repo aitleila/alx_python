@@ -14,40 +14,70 @@ class Base:
         """
         The id here is a private instance attribute
         """
-        if id is not None(value, int):
-            value = id
-            raise id
+        if id is not None:
+            self.id=id
         else:
-            new_value = id
-            return new_value
+            Base.__nb_objects +=1 
+            self.id = Base.__nb_objects
         
 class Rectangle(Base):
-        """
-        This class represent rectangle of sizes
-        """
+    """
+    This class represent rectangle of sizes
+    """
 
-    __width -> width
-    __height -> height
-    __x -> x
-    __y -> y
-
+    Base.__width__(self, width):
     def get_width(self):
         """
-        
+                
         """
-        return self._width
-    
+        return self.width
+        
     def set_width(self, value):
         """
-        
+                
         """
-        self._width = value
+        self.width = value
+
+    Base.__height = height
+    def get_height(self):
+        """
+            
+        """
+        return self.height
+    
+    def set_height(self, value):
+        """
+            
+        """
+        self.height = value
+        
+    Base.__y = y
+    def get_y (self):
+        """
+            
+        """
+        return self.y
+    
+    def set_y (self, value):
+        """
+            
+        """
+        self.y = value
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         
         """
-        def get_height (self):
-            return 
-
+        super(Base).__init__(width)
+        self.width = width
+        super(Base).__init__(height)
+        self.height = height
+        super(Base).__init__(x)
+        self.x=x
+        super(Base).__init__(y)
+        self.y = y
+        super(Base).__init__(id)
+        self.id = id
+    
+        
 
