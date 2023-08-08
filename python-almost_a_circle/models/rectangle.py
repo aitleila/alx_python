@@ -1,131 +1,86 @@
 #!/usr/bin/python3
 """
-This is a class rectangle that defines a square
-
+The file Rectangle inherist from Base
 """
-class Base:
-    """
-    This class represent the base class
-
-    """
-    __nb_objects = 0
-
-    def __init__(self, id=None):
-        """
-        The id here is a private instance attribute
-        """
-        if id is not None:
-            self.id=id
-        else:
-            Base.__nb_objects +=1 
-            self.id = Base.__nb_objects
+from models.base import Base
         
 class Rectangle(Base):
     """
-    This class represent rectangle of sizes
+    The Class Rectangle inherits from parent Base
     """
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """The Class Constructor"""        
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+        super().__init__(id)
 
-    __width = Base.width
-    """
-    Private instance attributes
-    """
     def get_width(self):
         """
         The getter of the attribute width
-        return value width
         """
-        return self.width
+        return self.__width
         
     def set_width(self, value):
         """
-        the setter of the attribute width
+        the setter of the private attribute width
         """
-        self.width = value
-
-    __height = Base.height
-    """
-    Private instance attributes
-    """
+        if not isinstance(self, value):
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = value
 
     def get_height(self):
         """
         The getter of the attribute height
-        return value height
         """
-        return self.height
+        return self.__height
     
     def set_height(self, value):
         """
-        The setter of the attribute height
+        The setter of the private attribute height
         """
-        self.height = value
-    
-    __x = Base.x
-    """
-    Private instance attributes
-    """
+        if not isinstance(self, value):
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
+        self.__height = value
     
     def get_x (self):
         """
         The getter of the attribute x
-        return self x 
         """
-        return self.x
+        return self.__x
     
     def set_x (self, value):
         """
-        The setter of the attribute x   
+        The setter of the private attribute x   
         """
-        self.x = value
+        if not isinstance(self, value):
+            raise TypeError("x must be an integer")
+        if value <= 0:
+            raise ValueError("x must be > 0")
+        self.__x = value
 
-    __y = Base.y
-    """
-    Private instance attributes
-    """
-    
     def get_y (self):
         """
         The getter of the attribute y
-        return : self y
         """
-        return self.y
+        return self.__y
     
     def set_y (self, value):
         """
-        The setter of the attribute y
+        The setter of the private attribute y
         """
-        self.y = value
+        if not isinstance(self, value):
+            raise TypeError("y must be an integer")
+        if value <= 0:
+            raise ValueError("y must be > 0")
+        self.__y = value
 
-    def __init__(self, width, height, x=0, y=0, id=None):
-        """
-        Class constructor
-        Call the super class with with use the logic of the __init__ of the Base class
-        """
-        super(Base).__init__(width)
-        """
-        Call the super class
-        """
-        self.width = width
-        super(Base).__init__(height)
-        """
-        Call the super class
-        """
-        self.height = height
-        super(Base).__init__(x)
-        """
-        Call the super class
-        """
-        self.x=x
-        super(Base).__init__(y)
-        """
-        Call the super class
-        """
-        self.y = y
-        super(Base).__init__(id)
-        """
-        Call the super class
-        """
-        self.id = id
+    
     
         
 
