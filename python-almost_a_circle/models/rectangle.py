@@ -104,5 +104,18 @@ class Rectangle(Base):
             return self.y == args[4]
         else:
             print('Please state two parameters')
-
+        
+    def update (self, *args, **kwargs):
+        """
+        Public method *args, **kwargs
+        """
+        if args:
+            attributes = ["id", "width", "height", "x", "y"]
+            for i, args in enumerate(args):
+                setattr(self,attributes[i], args)
+        if len(kwargs) == 2:
+            result = 1
+        else:
+            for key, value in kwargs.items():
+                setattr(key, value, args)
         
