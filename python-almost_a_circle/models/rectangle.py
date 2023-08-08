@@ -26,9 +26,13 @@ class Rectangle(Base):
     """
 
     __width = Base.width
+    """
+    Private instance attributes
+    """
     def get_width(self):
         """
         The getter of the attribute width
+        return value width
         """
         return self.width
         
@@ -39,10 +43,14 @@ class Rectangle(Base):
         self.width = value
 
     __height = Base.height
+    """
+    Private instance attributes
+    """
 
     def get_height(self):
         """
         The getter of the attribute height
+        return value height
         """
         return self.height
     
@@ -53,10 +61,14 @@ class Rectangle(Base):
         self.height = value
     
     __x = Base.x
+    """
+    Private instance attributes
+    """
     
     def get_x (self):
         """
         The getter of the attribute x
+        return self x 
         """
         return self.x
     
@@ -67,10 +79,14 @@ class Rectangle(Base):
         self.x = value
 
     __y = Base.y
+    """
+    Private instance attributes
+    """
     
     def get_y (self):
         """
         The getter of the attribute y
+        return : self y
         """
         return self.y
     
@@ -86,15 +102,29 @@ class Rectangle(Base):
         Call the super class with with use the logic of the __init__ of the Base class
         """
         super(Base).__init__(width)
-        
+        """
+        Call the super class
+        """
         self.width = width
         super(Base).__init__(height)
+        """
+        Call the super class
+        """
         self.height = height
         super(Base).__init__(x)
+        """
+        Call the super class
+        """
         self.x=x
         super(Base).__init__(y)
+        """
+        Call the super class
+        """
         self.y = y
         super(Base).__init__(id)
+        """
+        Call the super class
+        """
         self.id = id
     
         
