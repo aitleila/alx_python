@@ -25,10 +25,10 @@ class Rectangle(Base):
     This class represent rectangle of sizes
     """
 
-    Base.__width__(self, width):
+    __width = Base.width
     def get_width(self):
         """
-                
+                    
         """
         return self.width
         
@@ -38,7 +38,8 @@ class Rectangle(Base):
         """
         self.width = value
 
-    Base.__height = height
+    __height = Base.height
+
     def get_height(self):
         """
             
@@ -50,8 +51,23 @@ class Rectangle(Base):
             
         """
         self.height = value
-        
-    Base.__y = y
+    
+    __x = Base.x
+    
+    def get_x (self):
+        """
+            
+        """
+        return self.x
+    
+    def set_x (self, value):
+        """
+            
+        """
+        self.x = value
+
+    __y = Base.y
+    
     def get_y (self):
         """
             
