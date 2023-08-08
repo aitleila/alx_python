@@ -90,7 +90,7 @@ class Rectangle(Base):
 
     def update (self, *args):
         """
-        
+        Public method *args
         """
         if len(args)>0:
             return self.id == args[0]
