@@ -93,19 +93,25 @@ class Rectangle(Base):
         return self.__width*self.__height
     
     def display(self):
-        """Display the character #"""
+        """Display function"""
         for _ in range(self.__y):
             print()
         for _ in range(self.__height):
             print( ' ' *  self.__x  +  '#'  *  self.__width)
+    
+    def display(self):
+        """Display function"""
         for _ in range(self.__height):
             print('#' * self.__width)
-    
+
     def __str__(self):
+        """
+        The Rectangle string
+        """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
     
     def display(self):
-        """Display the character #"""
+        """Display function"""
         for _ in range(self.__y):
             print()
         for _ in range(self.__height):
