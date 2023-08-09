@@ -1,8 +1,26 @@
 #!/usr/bin/python3
 """
-The file Rectangle inherist from Base
+This is a class rectangle that defines a square
+
 """
-from models.base import Base
+class Base:
+    """
+    This class represent the base class
+
+    """
+    __nb_objects = 0
+
+    def __init__(self, id=None): 
+        """
+        The id here is a private instance attribute
+
+        """
+      
+        if id is not None:
+            self.id=id
+        else:
+            Base.__nb_objects +=1 
+            self.id = Base.__nb_objects
         
 class Rectangle(Base):
     """
@@ -15,12 +33,14 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
+
     @property
     def width(self):
         """
         The getter of the attribute width
         """
         return self.__width
+    
     @width.setter    
     def width(self, value):
         """
