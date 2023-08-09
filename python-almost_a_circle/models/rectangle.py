@@ -15,14 +15,14 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-
-    def get_width(self):
+    @property
+    def width(self):
         """
         The getter of the attribute width
         """
         return self.__width
-        
-    def set_width(self, value):
+    @width.setter    
+    def width(self, value):
         """
         the setter of the private attribute width
         """
@@ -32,13 +32,15 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
 
-    def get_height(self):
+    @property
+    def height(self):
         """
         The getter of the attribute height
         """
         return self.__height
     
-    def set_height(self, value):
+    @height.setter
+    def height(self, value):
         """
         The setter of the private attribute height
         """
@@ -47,14 +49,16 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
-    
-    def get_x (self):
+
+    @property
+    def x (self):
         """
         The getter of the attribute x
         """
         return self.__x
     
-    def set_x (self, value):
+    @x.setter
+    def x (self, value):
         """
         The setter of the private attribute x   
         """
@@ -64,13 +68,15 @@ class Rectangle(Base):
             raise ValueError("x must be > 0")
         self.__x = value
 
-    def get_y (self):
+    @property
+    def y (self):
         """
         The getter of the attribute y
         """
         return self.__y
     
-    def set_y (self, value):
+    @y.setter
+    def y (self, value):
         """
         The setter of the private attribute y
         """
