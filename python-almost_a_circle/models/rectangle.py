@@ -94,14 +94,14 @@ class Rectangle(Base):
         return self.__width*self.__height
     
     def display(self):
-        """Display function"""
+        """Display function with the character #"""
         for _ in range(self.__y):
             print()
         for _ in range(self.__height):
             print( ' ' *  self.__x  +  '#'  *  self.__width)
     
     def display(self):
-        """Display function"""
+        """Display function with the character #"""
         for _ in range(self.__height):
             print('#' * self.__width)
 
@@ -112,7 +112,7 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
     
     def display(self):
-        """Display function"""
+        """Display function with the character #"""
         for _ in range(self.__y):
             print()
         for _ in range(self.__height):
@@ -121,6 +121,7 @@ class Rectangle(Base):
     def update (self, *args):
         """
         Public method *args
+        “no-keyword argument” - Argument order is super important
         """
         num_args = len(args)
         if len(args)>0:
@@ -137,14 +138,15 @@ class Rectangle(Base):
     def update (self, *args, **kwargs):
         """
         Public method *args, **kwargs
+        “no-keyword argument” - Argument order is super important
         """
         if args:
             attributes = ["id", "width", "height", "x", "y"]
-            for i, args in enumerate(args):
-                setattr(self,attributes[i], args)
+            for i, arg in enumerate(args):
+                setattr(self,attributes[i], arg)
         if len(kwargs) == 2:
             result = 1
         else:
             for key, value in kwargs.items():
-                setattr(key, value, args)
+                setattr(self, key, value)
         
