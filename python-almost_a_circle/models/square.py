@@ -19,14 +19,15 @@ class Square(Rectangle):
             The Square string
             """
             return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.height)
+    
     @property
     def size(self):
-        """The getter and setter attributes height"""
-        return self.height
+        """The getter and setter attributes width"""
+        return self.width
 
     @size.setter
     def size(self, value):
-        """The private instance attributes height with setter method"""
+        """The private instance attributes width with setter method"""
         self.width = value
         self.height = value
     
