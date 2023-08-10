@@ -1,4 +1,7 @@
 import urllib.request
-with urllib.request.urlopen('https://alu-intranet.hbtn.io/status') as response:
+"""
+Python script that fetches https://alu-intranet.hbtn.io/status
+"""
+req = urllib.request.Request('https://alu-intranet.hbtn.io/status')
+with urllib.request.urlopen(req) as response:
    html = response.read()
-   
