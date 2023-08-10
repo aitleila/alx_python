@@ -144,7 +144,7 @@ class Rectangle(Base):
             attributes = ["id", "width", "height", "x", "y"]
             for i, arg in enumerate(args):
                 setattr(self, attributes[i], arg)      
-        if len(kwargs)==2:
+        if len(kwargs)==2(key, value):
             result = 1
         else:
             for key, value in kwargs.items():
