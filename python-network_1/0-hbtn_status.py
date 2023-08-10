@@ -14,4 +14,4 @@ data['type'] = "- type: <class 'str'>"
 data ['content'] = '- content: OK'
 full_data = data['body']+data['type']+data['content']
 
-print ("{}" "{}" "{}".format(data["body"], data["type"], data["content"]))
+print (req.text, "{}" "{}" "{}".format(data["body"], data["type"], data["content"]))
