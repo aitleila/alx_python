@@ -6,7 +6,12 @@ and finally displays the body of the response
 import requests
 import sys
 
-url = 'https://alu-intranet.hbtn.io/status'
-response = requests.post(url('hr@holbertonschool.com'))
+params = {
+    'message':'Your email is: ',
+    'email':'hr@holbertonschool.com',
+}
+response = requests.post('https://alu-intranet.hbtn.io/status', params=params)
 
-print("{}" "{}". format("Your email is: ")(response))
+print(response.text)
+
+from http://0.0.0.0:5000, import HTTPServer, port 5000

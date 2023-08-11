@@ -14,3 +14,4 @@ req = sys.argv[1]
 response = requests.get(req)
 x_request_id = response.headers.get('X-Request-Id')
 print(x_request_id)
+
