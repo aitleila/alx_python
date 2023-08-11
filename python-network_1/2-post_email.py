@@ -6,12 +6,14 @@ and finally displays the body of the response
 import requests
 import sys
 
-params = {
-    'message':'Your email is: ',
-    'email':'hr@holbertonschool.com',
-}
-response = requests.post('https://alu-intranet.hbtn.io/status', params=params)
+if len(sys.argv) != 2:
+    print("Usage: ./1-hbtn_header.py <https://alu-intranet.hbtn.io/status>")
+    sys.exit(1)
 
-print(response.text)
+url = 'https://alu-intranet.hbtn.io/status'
+email={'email':"hr@holbertonschool.com"}
+response = requests.post(url, params=email)
 
-from http://0.0.0.0:5000, import HTTPServer, port 5000
+print("Your email is: ", response)
+
+
