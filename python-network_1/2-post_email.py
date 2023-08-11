@@ -8,7 +8,7 @@ import sys
 
 
 if len(sys.argv) != 2:
-    email="test@test"
+    email="test@test.com"
     print("Email: ", email)
     sys.exit(1)
 
