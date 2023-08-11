@@ -6,8 +6,6 @@ and finally displays the body of the response
 import requests
 import sys
 
-if len(sys.argv) != 2:
-    sys.exit(1)
 
 req = sys.argv[1]
 email={'email':"hr@holbertonschool.com"}
