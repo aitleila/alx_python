@@ -8,11 +8,9 @@ import sys
 
 
 if len(sys.argv) != 2:
+    req = sys.argv[1]
+    response = requests.post(req, params=email)
     email={'email':"hr@holbertonschool.com"}
-    print("Your email is: ", email)
+    print("Email: ", email)
     sys.exit(1)
-req = sys.argv[1]
-email={'email':"hr@holbertonschool.com"}
-response = requests.post(req, params=email)
-x_request_id = response.headers.get('X-Request-Id')
-print(x_request_id)
+
