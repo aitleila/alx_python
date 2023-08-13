@@ -13,7 +13,6 @@ def main():
         return
     username = sys.argv[1]
     token = sys.argv[2]
-
     url = f"https://api.github.com/user"
     response = requests.get(url,auth=(username,token))
 
