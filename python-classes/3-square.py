@@ -23,7 +23,7 @@ class Square:
         Allows one to create getters and setters method for a private attribute.
         Enables controlled access to that attribute while maintaining encapsulation.
         """
-        self.__size
+        return self.__size
 
     @size.setter
 
