@@ -133,5 +133,5 @@ class Square(Rectangle):
          str: A string with the square description.
         """
 
-        return f"[Square] {self.__size}"
+        return f"[Retangle] {self.__size}/{self.__size}"
     
