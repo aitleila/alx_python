@@ -11,11 +11,11 @@ def main():
     if len(sys.argv) != 3:
         print("Usage: python 6-my_github.py aitleila leila_dkrth0983t")
         return
-        username = sys.argv[1]
-        token = sys.argv[2]
+    username = sys.argv[1]
+    token = sys.argv[2]
 
-        url = f"https://api.github.com/user"
-        response = requests.get(url,auth=(username,token))
+    url = f"https://api.github.com/user"
+    response = requests.get(url,auth=(username,token))
 
     if response.status_code == 200:
         user_data = response.json()
