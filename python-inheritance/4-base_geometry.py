@@ -5,21 +5,31 @@
     """
 class BaseGeometry:
     """
-    A base class representing geometry.
+    A class representing geometry.
     """
-    def area(self):
-        raise Exception('area() is not implemented')
+    def __dir__(cls) -> None:
+        """Remove __init_subclass"""
+        attributes = super().__dir__()
+        return [attribute for attribute in super().__dir__() if attribute != '__init_subclass__']
     
 class BaseGeometryMetaClass(type):
 
-    def __dir__(cls):
+    def __dir__(cls)->None:
+        """
+        Remove __init__ subclass
+        """
+        attributes = super().__dir__()
         return[attribute for attribute in super().__dir__() if attribute != '__init_subclass__']
     
 class BaseGeometry(metaclass=BaseGeometryMetaClass):
     """
     A base class representing geometry
     """
-    def __dir__(self):
-        return [attribute for attribute in super().__dir__() if attribute != '__init_subclass__']
-   
-    pass
+    def area(self):
+        """Raise an exception that area is not implemented"""
+        raise Exception("area() is not implemented")
+    
+    def __dir__(cls) -> None:
+                """Removing __init_subclass"""
+                attributes = super().__dir__()
+                return [attribute for attribute in super().__dir__() if attribute != '__init_subclass__']
