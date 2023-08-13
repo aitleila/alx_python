@@ -16,7 +16,6 @@ class Square:
         self.__size = size
 
     @property
-
     def size(self):
         """
         @property decorater:
@@ -26,7 +25,6 @@ class Square:
         return self.__size
 
     @size.setter
-
     def size(self, value):
         if not isinstance (value, int):
             raise TypeError("size must be an integer")
