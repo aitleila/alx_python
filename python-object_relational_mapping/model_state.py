@@ -2,7 +2,12 @@
 """Start link class to table in database 
 """
 import sys
+""" State class inherits from Base
+"""
 from model_state import Base, State
+
+"""State class inherits from Base
+"""
 
 from sqlalchemy import (create_engine)
 
